@@ -2,15 +2,14 @@ body {
     background-color: #f2f2f2;
     color: grey;
     font-family: monospace;
-    margin: 50px 50px 15px 50px;
-    padding: 5px 0 5px 5px;
+    margin: 2em 2em 1em;
+    padding: 1em;
     overflow-wrap: break-word;
 }
 
 .header {
     margin: 20px 0;
     text-align: center;
-    font-family: roboto sans-serif;
     text-shadow: 1px 1px 2px white;
     font-weight: bold;
 }
@@ -20,12 +19,15 @@ body {
     margin: 0 auto;
     padding: 1em 2em;
 }
+.header > h1 {
+    font-size: 2.2em;
+}
 .header > h3, .section > h4 {
     margin: 2em 0;
     font-family: monospace;
 }
 .header > h3 {
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: right;
 }
 .section > h4 {
@@ -33,14 +35,24 @@ body {
     text-align: center;
 }
 
-.section__first {
+.section-first {
     display: flex;
     justify-content: space-between;
 }
 
-.section__first > p {
+.section-first > p {
     width: 50vw;
 
+}
+.section-first__figure{
+    border-radius: 3%;
+    margin: 1em auto;
+    align-self: center;
+    text-align: center;
+}
+.section-first__figure > img {
+    height: -webkit-fill-available;
+    max-height: 220px;
 }
 
 .section p {
@@ -50,31 +62,23 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
+    font-size: 1.3em;
 }
+
 .section__list figure {
     display: flex;
     justify-content: normal;
     align-items: center;
+    width: 32vw;
+    margin: 0 auto;
+    padding: 1em;
 }
 .section__list figure > figcaption {
     padding: 0 1em;
 }
 
 
-.text-margin {
-    margin: 0 0 0 15px;
-}
 
-.section-img {
-    height: 270px;
-    width: auto;
-    border-radius: 3%;
-    margin: 1em;
-}
-
-.list-text {
-    text-align: justify;
-}
 
 .list-img {
     height: 50px;
@@ -84,8 +88,6 @@ body {
 
 .list-img:hover {
     cursor: pointer;
-    /*height: 150px;*/
-    width: auto;
 }
 
 .cap {
